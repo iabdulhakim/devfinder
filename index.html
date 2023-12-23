@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./tailwind.js"></script>
+    <title>devfinder | AshrafDev</title>
+</head>
+<body>
+    <header>
+        <div class="header-container container flex justify-between max-w-3xl mt-10 items-center">
+            <a href="./index.html" class="logo font-bold text-2xl">devfinder</a>
+            <div class="dark flex cursor-pointer items-center">
+                <p class="dark_text text-lg font-bold mr-4 uppercase text-gray-500 tracking-wider">dark</p>
+                <img src="./moon.svg" class="dark_img" alt="moon">
+            </div>
+        </div>
+    </header>
+    <div class="search-container container mt-9 ">
+        <form class="flex pt-2 pb-2 pl-8 pr-3 rounded-xl ml-auto mr-auto shadow-gray-400 shadow-lg">
+            <img class="cursor-pointer mr-6" src="./search-icon.svg" alt="" height="24px" width="24px">
+            <input type="text" placeholder="Search GitHub username..." class="input input-ghost w-full max-w-md pl-1 placeholder-blue-900 opacity-80" />
+            <button class="ml-auto text-base bg-blue-600 text-white px-5 py-3 rounded-xl">Search</button>
+        </form>
+    </div>
+    <main class="info-container container max-w-3xl bg-white mt-6 rounded-xl p-12 shadow-gray-400 shadow-lg">
+        <div class="info_top flex">
+            <img src="./hero_ava.png" alt="" class="info_img rounded-full mr-9">
+            <div class="user_info ml-2">
+                <h1 class="user_name font-bold text-2xl">The Octocat</h1>
+                <a href="" class="user_username text-blue-600 mt-1">@octocat</a>
+                <p class="user_bio mt-5 text-gray-400">This profile has no bio</p>
+            </div>
+            <p class="user_join ml-auto text-gray-400 mt-1">Joined 25 Jan 2011</p>
+        </div>
+        <div class="info_center mt-5 rounded-xl flex justify-between px-8 py-4 ml-40">
+            <div class="info_center_repos">
+                <p class="text-xs text-gray-500">Repos</p>
+                <h4 class="text-xl font-bold mt-1">8</h4>
+            </div>
+            <div class="info_center_followers">
+                <p class="text-xs text-gray-500">Followers</p>
+                <h4 class="text-xl font-bold mt-1">3938</h4>
+            </div>
+            <div class="info_center_following">
+                <p class="text-xs text-gray-500">Following</p>
+                <h4 class="text-xl font-bold mt-1">9</h4>
+            </div>
+        </div>
+        <div class="info_footer flex justify-between max-w-md mt-10 ml-40">
+            <div class="footer_first_wrapper">
+                <a href="" class="info_footer flex gap-4">
+                    <img src="./location.svg" class="" alt="">
+                    <p class="text-base text-blue-950 opacity-80 hover:underline">San Fransisco</p>
+                </a>
+                <a href="" class="info_footer flex gap-3 mt-4">
+                    <img src="./link.svg" class="" alt="">
+                    <p class="text-base text-blue-950 opacity-80 hover:underline">https://github.blog</p>
+                </a>
+            </div>
+            <div class="footer_second_wrapper">
+                <a href="" class="info_footer flex gap-4">
+                    <img src="./twitter.svg" class="" alt="">
+                    <p class="text-base text-blue-950 opacity-80 hover:underline">Not Avaliable</p>
+                </a>
+                <a href="" class="info_footer flex gap-4 mt-4">
+                    <img src="./address.svg" class="" alt="">
+                    <p class="text-base text-blue-950 opacity-80 hover:underline">@github</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
